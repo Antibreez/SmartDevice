@@ -1,0 +1,146 @@
+.page-header {
+  min-height: 878px;
+  padding-top: 33px;
+
+  background-image: url("../img/header-bg-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #1B2D37;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/header-bg-desktop@2x.jpg");
+    background-size: 1920px auto;
+  }
+}
+
+.page-header__wrapper {
+  @include wrapper;
+}
+
+.page-header__bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-right: 3px;
+  margin-bottom: 230px;
+}
+
+.page-header__mail {
+  position: relative;
+
+  margin-left: auto;
+  margin-right: 88px;
+  padding-left: 39px;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 2px;
+      left: 0;
+
+      width: 19px;
+      height: 14px;
+
+      background-image: url("../img/icon-envelope.svg");
+    }
+}
+
+.page-header__phone {
+  position: relative;
+
+  padding-left: 34px;
+  margin-right: 49px;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 18px;
+      height: 18px;
+
+      background-image: url("../img/icon-phone.svg");
+    }
+}
+
+.page-header__phone:hover,
+.page-header__mail:hover {
+  opacity: 0.8;
+}
+
+.page-header__phone:hover span,
+.page-header__mail:hover span {
+  border-bottom: 1px dotted #ffffff;
+}
+
+.page-header__phone:active,
+.page-header__mail:active {
+  opacity: 0.5;
+}
+
+.page-header__call-request {
+  min-width: 180px;
+  padding: 14px 12px 13px;
+
+  font-family: $font-family-secondary;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.page-header__title {
+  margin: 0;
+  margin-left: -4px;
+  margin-bottom: 27px;
+
+  font-family: $font-family-secondary;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.page-header__description {
+  position: relative;
+
+  margin: 0;
+  width: 720px;
+  padding-left: 94px;
+
+  font-size: 22px;
+  line-height: 34px;
+  color: #ffffff;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 17px;
+    left: 0;
+
+    width: 66px;
+    height: 2px;
+
+    background-color: #ffffff;
+  }
+}
