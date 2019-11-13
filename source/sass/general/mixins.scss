@@ -4,15 +4,14 @@
   padding-right: 30px;
   margin: 0 auto;
 
-  // @media (min-width: $tablet-width) {
-  //   min-width: 768px;
-  //   padding-left: 3.9%;
-  //   padding-right: 3.9%;
-  // }
+  @media (max-width: 1023px) {
+    padding-left: 3.3%;
+    padding-right: 3.3%;
+  }
 
-  // @media (min-width: $desktop-width) {
-  //   width: 1300px;
-  //   padding-left: 40px;
-  //   padding-right: 40px;
-  // }
+  @media (max-width: 767px) {
+    padding-left: 4.7%;
+    padding-right: 4.7%;
+    min-width: 320px;
+  }
 }
