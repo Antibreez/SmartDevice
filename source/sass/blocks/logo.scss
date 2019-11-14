@@ -2,6 +2,10 @@
   width: 202px;
   height: 52px;
 
+  &--bottom {
+    width: 216px;
+  }
+
   &:hover {
     opacity: 0.8;
   }
@@ -16,14 +20,28 @@
   height: 52px;
 }
 
+.logo--bottom img {
+  width: 216px;
+}
+
 @media (max-width: 767px) {
   .logo {
     width: 38px;
     height: 38px;
+
+    &--bottom {
+      width: 216px;
+      height: 52px;
+    }
   }
 
   .logo img {
     width: 38px;
     height: 38px;
+  }
+
+  .logo--bottom img {
+    width: 216px;
+    height: 52px;
   }
 }

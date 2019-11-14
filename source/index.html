@@ -9,32 +9,120 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <div class="page-header__bar">
-        <a class="page-header__logo  logo" href="index.html">
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/logo-mobile.svg" >
-            <!-- 1х: 202px; 2x: 404px -->
-            <img src="img/logo-desktop@1x.png" srcset="img/logo-desktop@2x.png 2x" alt="Smart Device">
-          </picture>
-        </a>
-        <a class="page-header__mail" href="mailto:info@sd.ru" aria-label="Написать на почту">
-          <span>info@sd.ru</span>
-        </a>
-        <a class="page-header__phone" href="tel:+74950005252" aria-label="Позвонить">
-          <span>+7 (495) 000 52 52</span>
-        </a>
-        <button class="page-header__call-request" type="button">Заказать звонок</button>
-      </div>
-      <h1 class="page-header__title">Печатные платы</h1>
-      <p class="page-header__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-      <a class="page-header__consultation" href="#">
-        <span class="cosultation-contain  consultation-contain--desktop">Получить бесплатную консультацию</span>
-        <span class="cosultation-contain  consultation-contain--mobile">Бесплатная консультация</span>
-      </a>
-      <span class="page-header__scroll">Скролл вниз</span>
-    </div>
+    <a class="page-header__logo  logo" href="index.html">
+      <picture>
+        <source media="(max-width: 767px)" srcset="img/logo-mobile.svg" >
+        <!-- 1х: 202px; 2x: 404px -->
+        <img src="img/logo-desktop@1x.png" srcset="img/logo-desktop@2x.png 2x" alt="Smart Device">
+      </picture>
+    </a>
+    <a class="page-header__mail" href="mailto:info@sd.ru" aria-label="Написать на почту">
+      <span>info@sd.ru</span>
+    </a>
+    <a class="page-header__phone" href="tel:+74950005252" aria-label="Позвонить">
+      <span>+7 (495) 000 52 52</span>
+    </a>
+    <button class="page-header__call-request" type="button">Заказать звонок</button>
   </header>
+  <main>
+    <section class="promo">
+      <div class="promo__wrapper">
+
+        <h1 class="promo__title">Печатные платы</h1>
+        <p class="promo__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <a class="promo__consultation" href="#">
+          <span class="cosultation-contain  consultation-contain--desktop">Получить бесплатную консультацию</span>
+          <span class="cosultation-contain  consultation-contain--mobile">Бесплатная консультация</span>
+        </a>
+        <span class="promo__scroll">Скролл вниз</span>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__main">
+      <div class="page-footer__main-container">
+        <div class="page-footer__logo-socials">
+          <a class="page-footer__logo  logo logo--bottom" href="index.html">
+            <picture>
+              <!-- 1х: 216px; 2x: 432px -->
+              <img src="img/logo-bottom@1x.png" srcset="img/logo-bottom@2x.png 2x" alt="Service Device">
+            </picture>
+          </a>
+          <p class="page-footer__copyright-top">1999-2018 SD Service Devices</p>
+          <div class="page-footer__socials  socials">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Мы в Фэйсбуке</span>
+                  <img src="img/fb.svg" width="27" height="27">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Мы в Одноклассниках</span>
+                  <img src="img/ok.svg" width="27" height="27">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Мы в Вконтакте</span>
+                  <img src="img/vk.svg" width="27" height="27">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="page-footer__nav">
+          <h2 class="page-footer__nav-title">Разделы сайта</h2>
+          <ul class="page-footer__nav-list">
+            <li class="page-footer__nav-item">
+              <a class="page-footer__nav-link" href="#">О компании</a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a class="page-footer__nav-link" href="#">Продукты</a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a class="page-footer__nav-link" href="#">Производство печатных плат</a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a class="page-footer__nav-link" href="#">Монтаж печатных плат</a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a class="page-footer__nav-link" href="#">Комплектующие</a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a class="page-footer__nav-link" href="#">Доставка</a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a class="page-footer__nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <button class="page-footer__button  page-footer__button--nav">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </nav>
+        <div class="page-footer__contacts">
+          <h2 class="page-footer__contacts-title">Наш офис</h2>
+          <p class="page-footer__contacts-content">
+            г. Мытищи, Олимрийский проспект, д.10<br>
+            +7 (495) 589-40-50<br>
+            +7 (925) 003-87-67<br>
+            +7 (926) 926-080-79
+          </p>
+          <button class="page-footer__button  page-footer__button--contacts">
+            <span class="visually-hidden">Показать контакты</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer__bottom-bar">
+      <span class="page-footer__rights-reserved">Все права защищены</span>
+      <span class="page-footer__copyright-bottom">1999-2018 SD Service Devices</span>
+      <a class="page-footer__privacy-terms" href="#">Условия конфиденциальности</a>
+      <a class="page-footer__developed" href="#">Developed by WOW Studio</a>
+    </div>
+  </footer>
   <script src="js/picturefill.js" async></script>
+  <script src="js/main.js" async></script>
 </body>
 </html>
