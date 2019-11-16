@@ -139,6 +139,16 @@
   background-color: transparent;
   border: 1px solid #ffffff;
   border-radius: 5px;
+
+  &:hover {
+    color: #00b2ff;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .question__form-container label {

@@ -1,5 +1,33 @@
 .advantages-about {
   background-image: url("../img/about-bg-desktop@1x.png");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: top -29px center;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/about-bg-desktop@2x.png");
+    background-size: 1920px auto;
+  }
+}
+
+.advantages-about__wrapper {
+  @include wrapper;
+}
+
+@media (max-width: 1023px) {
+  .advantages-about {
+    background-image: url("../img/about-bg-tablet@1x.png");
+    background-size: 1532px auto;
+    background-position: top center;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/about-bg-tablet@2x.png");
+      background-size: 1532px auto;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages-about {
+    background-position: top 561px left 58.8%;
+  }
 }
