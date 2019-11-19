@@ -3,9 +3,10 @@
 
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   padding-right: 33px;
   padding-top: 33px;
+  min-height: 250px;
 }
 
 .page-header__mail {
@@ -13,6 +14,7 @@
 
   margin-left: auto;
   margin-right: 88px;
+  margin-top: 17px;
   padding-left: 39px;
 
   font-size: 16px;
@@ -39,6 +41,7 @@
 
   padding-left: 34px;
   margin-right: 49px;
+  margin-top: 17px;
 
   font-size: 16px;
   line-height: 18px;
@@ -72,6 +75,7 @@
 .page-header__call-request {
   width: 180px;
   padding: 14px 12px 13px;
+  margin-top: 4px;
 
   font-family: $font-family-secondary;
   font-weight: 700;
