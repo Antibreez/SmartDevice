@@ -101,9 +101,12 @@
     order: 8;
   }
 
-  &:nth-child(n + 9) {
-    width: 100%;
-    margin-left: 60%;
+  &:nth-child(2n + 9) {
+    order: 9;
+  }
+
+  &:nth-child(2n + 10) {
+    width: 40%;
 
     order: 9;
   }
@@ -287,9 +290,12 @@
       order: initial;
     }
 
-    &:nth-child(n + 9) {
+    &:nth-child(2n + 9) {
+      order: initial;
+    }
+
+    &:nth-child(2n + 10) {
       width: 100%;
-      margin-left: 0;
 
       order: initial;
     }
