@@ -61,12 +61,7 @@
 
 .page-header__phone:hover,
 .page-header__mail:hover {
-  opacity: 0.8;
-}
-
-.page-header__phone:hover span,
-.page-header__mail:hover span {
-  border-bottom: 1px dotted #ffffff;
+  opacity: 0.7;
 }
 
 .page-header__phone:active,
@@ -75,7 +70,7 @@
 }
 
 .page-header__call-request {
-  min-width: 180px;
+  width: 180px;
   padding: 14px 12px 13px;
 
   font-family: $font-family-secondary;

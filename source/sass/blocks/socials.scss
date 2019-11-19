@@ -1,4 +1,4 @@
-.social__list {
+.socials__list {
   margin: 0;
   padding: 0;
 
@@ -7,20 +7,20 @@
   list-style: none;
 }
 
-.social__item:not(:last-child) {
+.socials__item:not(:last-child) {
   margin-right: 15px;
 }
 
-.social__link {
+.socials__link {
   display: block;
   width: 27px;
   height: 27px;
 }
 
-.social__link:hover {
+.socials__link:hover {
   opacity: 0.8;
 }
 
-.social__link:active {
+.socials__link:active {
   opacity: 0.5;
 }

@@ -30,15 +30,15 @@
         <h1 class="promo__title">Печатные платы</h1>
         <p class="promo__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
         <a class="promo__consultation" href="#">
-          <span class="cosultation-contain  consultation-contain--desktop">Получить бесплатную консультацию</span>
-          <span class="cosultation-contain  consultation-contain--mobile">Бесплатная консультация</span>
+          <span class="consultation-contain  consultation-contain--desktop">Получить бесплатную консультацию</span>
+          <span class="consultation-contain  consultation-contain--mobile">Бесплатная консультация</span>
         </a>
-        <span class="promo__scroll">Скролл вниз</span>
+        <a class="promo__scroll" href="#advantages">Скролл вниз</a>
       </div>
     </section>
     <div class="advantages-about">
       <div class="advantages-about__wrapper">
-        <section class="advantages">
+        <section class="advantages" id="advantages">
           <h2 class="visually-hidden">Наши приемущества</h2>
           <ul class="advantages__list">
             <li class="advantages__item">
@@ -90,17 +90,38 @@
         <ul class="products__list">
           <li class="products__item">
             <a class="products__link" href="#">
-              <p class="product__name">Производство печатных плат</p>
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/products-bg1-mobile@1x.webp 1x, img/products-bg1-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/products-bg1-tablet@1x.webp 1x, img/products-bg1-tablet@2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/products-bg1-mobile@1x.png 1x, img/products-bg1-mobile@2x.png 2x">
+                <source media="(max-width: 1023px)" srcset="img/products-bg1-tablet@1x.png 1x, img/products-bg1-tablet@2x.png 2x">
+                <img class="products__image" src="img/products-bg1-desktop@1x.png" srcset="img/products-bg1-desktop@2x.png 2x" alt="Производство печатных плат">
+              </picture>
+              <p class="products__name">Производство печатных плат</p>
             </a>
           </li>
           <li class="products__item">
             <a class="products__link" href="#">
-              <p class="product__name">Монтаж печатных плат</p>
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/products-bg2-mobile@1x.webp 1x, img/products-bg2-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/products-bg2-tablet@1x.webp 1x, img/products-bg2-tablet@2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/products-bg2-mobile@1x.png 1x, img/products-bg2-mobile@2x.png 2x">
+                <source media="(max-width: 1023px)" srcset="img/products-bg2-tablet@1x.png 1x, img/products-bg2-tablet@2x.png 2x">
+                <img class="products__image" src="img/products-bg2-desktop@1x.png" srcset="img/products-bg2-desktop@2x.png 2x" alt="Производство печатных плат">
+              </picture>
+              <p class="products__name">Монтаж печатных плат</p>
             </a>
           </li>
           <li class="products__item">
             <a class="products__link" href="#">
-              <p class="product__name">Комплектующие для светотехники</p>
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/products-bg3-mobile@1x.webp 1x, img/products-bg3-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/products-bg3-tablet@1x.webp 1x, img/products-bg3-tablet@2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/products-bg3-mobile@1x.png 1x, img/products-bg3-mobile@2x.png 2x">
+                <source media="(max-width: 1023px)" srcset="img/products-bg3-tablet@1x.png 1x, img/products-bg3-tablet@2x.png 2x">
+                <img class="products__image" src="img/products-bg3-desktop@1x.png" srcset="img/products-bg3-desktop@2x.png 2x" alt="Производство печатных плат">
+              </picture>
+              <p class="products__name">Комплектующие для светотехники</p>
             </a>
           </li>
         </ul>
@@ -113,9 +134,12 @@
           <b class="question__slogan">Остались вопросы? Задайте их нам!</b>
           <p class="question__description">Мы проконсультируем Вас бесплатно</p>
           <form>
-            <input type="text" name="name" placeholder="Имя" required="">
-            <input type="text" name="phone" pattern="[0-9]+" placeholder="Телефон" required="">
-            <textarea name="question" required="" placeholder="Ваш вопрос"></textarea>
+            <label for="name" class="visually-hidden">Введите Ваше имя</label>
+            <input type="text" name="name" id="name" placeholder="Имя" required="">
+            <label for="phone" class="visually-hidden">Введите Ваш телефон</label>
+            <input type="text" name="phone" id="phone" placeholder="Телефон" required="">
+            <label for="question" class="visually-hidden">Введите Ваш вопрос</label>
+            <textarea name="question" id="question" required="" placeholder="Ваш вопрос"></textarea>
             <button type="submit">Задать вопрос</button>
             <div class="question__agreement-container">
               <input class="visually-hidden" type="checkbox" name="agreement" id="agreement" required="">
@@ -138,23 +162,23 @@
           </a>
           <p class="page-footer__copyright-top">1999-2018 SD Service Devices</p>
           <div class="page-footer__socials  socials">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link" href="#">
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a class="socials__link" href="#">
                   <span class="visually-hidden">Мы в Фэйсбуке</span>
-                  <img src="img/fb.svg" width="27" height="27">
+                  <img src="img/fb.svg" width="27" height="27" alt="facebook">
                 </a>
               </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
+              <li class="socials__item">
+                <a class="socials__link" href="#">
                   <span class="visually-hidden">Мы в Одноклассниках</span>
-                  <img src="img/ok.svg" width="27" height="27">
+                  <img src="img/ok.svg" width="27" height="27" alt="одноклассники">
                 </a>
               </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
+              <li class="socials__item">
+                <a class="socials__link" href="#">
                   <span class="visually-hidden">Мы в Вконтакте</span>
-                  <img src="img/vk.svg" width="27" height="27">
+                  <img src="img/vk.svg" width="27" height="27" alt="Вконтакте">
                 </a>
               </li>
             </ul>
@@ -163,6 +187,7 @@
         <nav class="page-footer__nav">
           <h2 class="page-footer__nav-title">Разделы сайта</h2>
           <ul class="page-footer__nav-list">
+
             <li class="page-footer__nav-item">
               <a class="page-footer__nav-link" href="#">О компании</a>
             </li>
@@ -175,6 +200,7 @@
             <li class="page-footer__nav-item">
               <a class="page-footer__nav-link" href="#">Монтаж печатных плат</a>
             </li>
+
             <li class="page-footer__nav-item">
               <a class="page-footer__nav-link" href="#">Комплектующие</a>
             </li>
@@ -192,10 +218,10 @@
         <div class="page-footer__contacts">
           <h2 class="page-footer__contacts-title">Наш офис</h2>
           <p class="page-footer__contacts-content">
-            г. Мытищи, Олимпийский проспект, д.10<br>
-            +7 (495) 589-40-50<br>
-            +7 (925) 003-87-67<br>
-            +7 (926) 926-080-79
+            <a class="page-footer__contacts-adress" href="#">г. Мытищи, Олимпийский проспект, д.10</a>
+            <a class="page-footer__contacts-phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
+            <a class="page-footer__contacts-phone" href="tel:+79250038767">+7 (925) 003-87-67</a>
+            <a class="page-footer__contacts-phone" href="tel:+792692608079">+7 (926) 926-080-79</a>
           </p>
           <button class="page-footer__button  page-footer__button--contacts">
             <span class="visually-hidden">Показать контакты</span>
@@ -211,15 +237,19 @@
     </div>
   </footer>
   <section class="popup  hidden">
+    <h2 class="visually-hidden">Заявка на обратный звонок</h2>
     <div class="popup__overlay"></div>
     <div class="popup__content">
       <div class="popup__form-container">
         <b class="popup__slogan">Закажите звонок</b>
         <p class="popup__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <form>
-          <input type="text" name="name" placeholder="Имя" required="">
-          <input type="text" name="phone" pattern="[0-9]+" placeholder="Телефон" required="">
-          <textarea name="popup" required="" placeholder="Ваш вопрос"></textarea>
+          <label for="popup-name" class="visually-hidden">Введите Ваше имя</label>
+          <input type="text" name="name" id="popup-name" placeholder="Имя" required="">
+          <label for="popup-phone" class="visually-hidden">Введите Ваш телефон</label>
+          <input type="text" name="phone" id="popup-phone" placeholder="Телефон" required="">
+          <label for="popup-message" class="visually-hidden">Введите Ваше сообщение</label>
+          <textarea name="popup" id="popup-message" required="" placeholder="Ваш вопрос"></textarea>
           <button type="submit">Отправить</button>
           <div class="popup__agreement-container">
             <input class="visually-hidden" type="checkbox" name="popup-agreement" id="popup-agreement" required="">
@@ -231,6 +261,7 @@
     </div>
   </section>
   <script src="js/picturefill.js" async=""></script>
+  <script src="https://unpkg.com/imask"></script>
   <script src="js/main.js" async=""></script>
 </body>
 </html>

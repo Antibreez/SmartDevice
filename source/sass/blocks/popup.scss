@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
 
-  width: 100vw;
+  width: 100%;
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.5);
@@ -190,6 +190,15 @@
 }
 
 .popup__form-container input[type="checkbox"]:focus + label::before {
+  box-shadow: 0 0 6px #ffffff;
+}
+
+.popup__form-container label[for="popup-agreement"]:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.popup__form-container label[for="popup-agreement"]:hover::before {
   box-shadow: 0 0 6px #ffffff;
 }
 

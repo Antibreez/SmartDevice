@@ -29,7 +29,8 @@
 
 .page-footer__nav {
   padding-top: 1px;
-  width: 640px;
+  width: 516px;
+  min-width: 400px;
 }
 
 .page-footer__nav-title,
@@ -50,10 +51,8 @@
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column;
   align-content: flex-start;
   flex-wrap: wrap;
-  height: 100px;
 
   list-style: none;
 
@@ -62,8 +61,52 @@
   }
 }
 
+.page-footer__nav-break {
+  min-height: 100px;
+  height: 100%;
+}
+
 .page-footer__nav-item {
-  margin-right: 74px;
+  width: 60%;
+
+  &:nth-child(5) {
+    width: 40%;
+    order: 1;
+  }
+
+  &:nth-child(2) {
+    order: 3;
+  }
+
+  &:nth-child(6) {
+    width: 40%;
+    order: 4;
+  }
+
+  &:nth-child(3) {
+    order: 5;
+  }
+
+  &:nth-child(7) {
+    width: 40%;
+    order: 6;
+  }
+
+  &:nth-child(4) {
+    order: 7;
+  }
+
+  &:nth-child(8) {
+    width: 40%;
+    order: 8;
+  }
+
+  &:nth-child(n + 9) {
+    width: 100%;
+    margin-left: 60%;
+
+    order: 9;
+  }
 }
 
 .page-footer__nav-link {
@@ -85,6 +128,8 @@
 .page-footer__contacts {
   margin-left: auto;
   padding-right: 2px;
+  max-width: 340px;
+  min-width: 335px;
 }
 
 .page-footer__contacts-content {
@@ -93,8 +138,21 @@
   font-size: 15px;
   line-height: 25px;
   color: #1b2d37;
+}
+
+.page-footer__contacts-phone,
+.page-footer__contacts-adress {
+  display: block;
 
   opacity: 0.5;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 .page-footer__button {
@@ -121,11 +179,11 @@
 }
 
 .page-footer__rights-reserved {
-  margin-right: 74px;
+  margin-right: 5.23%;
 }
 
 .page-footer__copyright-bottom {
-  margin-right: 142px;
+  margin-right: 10.1%;
 }
 
 .page-footer__privacy-terms:hover,
@@ -190,11 +248,56 @@
 
   .page-footer__nav {
     width: 45%;
+    min-width: auto;
     margin-left: 3.3%;
+  }
+
+  .page-footer__nav-item {
+    width: 100%;
+
+    &:nth-child(5) {
+      width: 100%;
+      order: initial;
+    }
+
+    &:nth-child(2) {
+      order: initial;
+    }
+
+    &:nth-child(6) {
+      width: 100%;
+      order: initial;
+    }
+
+    &:nth-child(3) {
+      order: initial;
+    }
+
+    &:nth-child(7) {
+      width: 100%;
+      order: initial;
+    }
+
+    &:nth-child(4) {
+      order: initial;
+    }
+
+    &:nth-child(8) {
+      width: 100%;
+      order: initial;
+    }
+
+    &:nth-child(n + 9) {
+      width: 100%;
+      margin-left: 0;
+
+      order: initial;
+    }
   }
 
   .page-footer__contacts {
     width: 45%;
+    max-width: none;
     margin-left: auto;
     margin-right: 3.3%;
     padding-left: 3px;
@@ -303,12 +406,13 @@
 
   .page-footer__button {
     position: absolute;
-    top: 25px;
-    right: 4.7%;
+    top: 0;
+    right: 0;
 
     display: block;
-    width: 24px;
-    height: 24px;
+    width: 100%;
+    height: 73px;
+    padding: 0;
 
     background-color: transparent;
     border: none;
@@ -318,8 +422,8 @@
       content: "";
 
       position: absolute;
-      top: 11px;
-      left: 4px;
+      top: 36px;
+      right: 16px;
 
       width: 16px;
       height: 1px;
